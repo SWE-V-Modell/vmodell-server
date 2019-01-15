@@ -1,0 +1,50 @@
+POST https://localhost:5001/api/test/admin
+Accept: */*
+Cache-Control: no-cache
+
+{"id":0,"name":"Sean Ber","eMail":"n.bauer@atos.net","password":"bla"}
+
+<> 2019-01-14T114804.415.txt
+
+###
+
+POST https://localhost:5001/api/test/admin
+Accept: */*
+Cache-Control: no-cache
+
+{"id":0,"name":"Sean Ber","eMail":"n.bauer@atos.net","password":"bla"}
+
+<> 2019-01-14T114607.415.txt
+
+###
+
+POST https://localhost:5001/api/test/admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-14T114512.415.txt
+
+###
+
+POST https://localhost:5001/api/test/admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-14T114511.415.txt
+
+###
+
+POST https://localhost:5001/api/test/admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-14T114434.415.txt
+
+###
+
+POST http://localhost:5001/api/test/admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+

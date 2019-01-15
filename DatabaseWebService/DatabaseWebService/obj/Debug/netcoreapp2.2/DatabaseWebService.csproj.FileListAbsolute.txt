@@ -1,0 +1,14 @@
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.deps.json
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.runtimeconfig.json
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.runtimeconfig.dev.json
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.dll
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.pdb
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.csprojAssemblyReference.cache
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.csproj.CoreCompileInputs.cache
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.RazorAssemblyInfo.cache
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.RazorAssemblyInfo.cs
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.AssemblyInfoInputs.cache
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.AssemblyInfo.cs
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.RazorTargetAssemblyInfo.cache
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.dll
+C:\Users\sebas\RiderProjects\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.pdb
