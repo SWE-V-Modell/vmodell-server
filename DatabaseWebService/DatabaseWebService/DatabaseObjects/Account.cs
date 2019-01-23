@@ -5,14 +5,14 @@ using MySql.Data.MySqlClient;
 namespace DatabaseWebService.DatabaseObjects
 {
     [Serializable]
-    [DatabaseTable("Admin")]
-    public class Admin
+    [DatabaseTable("Account")]
+    public class Account
     {
         [DatabaseColumn("Id", IsPrimary = true)]
         public int? Id { get; set; }
-        [DatabaseColumn("Name")]
-        public string Name { get; set; }
-        [DatabaseColumn("Account")]
-        public int? Account { get; set; }
+        [DatabaseColumn("Email")]
+        public string EMail { get; set; }
+        [DatabaseColumn("Password")]
+        public string Password { get; set; }
     }
 }

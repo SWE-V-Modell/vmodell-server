@@ -1,22 +1,21 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection;
-using MySql.Data.MySqlClient;
+using DatabaseWebService.DatabaseObjects;
 
-namespace DatabaseWebService.DatabaseObjects
+namespace DatabaseWebService
 {
     public static class DbSelector
     {
-        public static List<T> Select<T>(T template) where T : new()
+        public static List<object> MatchTemplate(object template)
         {
             //The result list to be returned
-            var output = new List<T>();
+            var output = new List<object>();
             var connection = new DatabaseConnection().GetInstance();
             var command = connection.CreateCommand();
             var paramCount = 0;
             
             //Receive the Mappable classes Table attribute, to know the database table to select from
-            var tableAttribute = typeof(T).GetCustomAttributes(typeof(DatabaseTable), false);
+            var tableAttribute = template.GetType().GetCustomAttributes(typeof(DatabaseTable), false);
             command.CommandText = $"SELECT * FROM {((DatabaseTable)tableAttribute[0]).TableName}";
 
             //Add an Equals request for every submitted property in the template
@@ -52,9 +51,9 @@ namespace DatabaseWebService.DatabaseObjects
             {
                 while (reader.Read())
                 {
-                    var obj = new T();
+                    var obj = Activator.CreateInstance(template.GetType());
                     //compare each property of the target object to its respective database-column in the reader (if existent)
-                    foreach (var property in typeof(T).GetProperties())
+                    foreach (var property in template.GetType().GetProperties())
                     {
                         //skip if property has no column description or is not a DatabaseColumn attribute
                         if (!(property.GetCustomAttributes(typeof(DatabaseColumn), false)?[0] is DatabaseColumn attribute)) continue;
@@ -72,7 +71,7 @@ namespace DatabaseWebService.DatabaseObjects
             return output;
         }
 
-        public static void Insert<T>(T data)
+        public static void Insert(object data)
         {
             var connection = new DatabaseConnection().GetInstance();
             var command = connection.CreateCommand();
@@ -82,7 +81,7 @@ namespace DatabaseWebService.DatabaseObjects
             foreach (var property in data.GetType().GetProperties())
             {
                 if(!(property.GetCustomAttributes(typeof(DatabaseColumn), false)?[0] is DatabaseColumn databaseColumn)) continue;
-
+                if (databaseColumn.IsPrimary) continue;
                 columns += $"{databaseColumn.ColumnName},";
                 
                 if(property.PropertyType == typeof(string))
@@ -95,13 +94,13 @@ namespace DatabaseWebService.DatabaseObjects
             values = values.Substring(0, values.Length - 1);
             
             //Receive the Mappable classes Table attribute, to know the database table to select from
-            var tableAttribute = typeof(T).GetCustomAttributes(typeof(DatabaseTable), false);
+            var tableAttribute = data.GetType().GetCustomAttributes(typeof(DatabaseTable), false);
             command.CommandText = $"INSERT INTO {((DatabaseTable)tableAttribute[0]).TableName}({columns}) VALUES ({values}); ";
 
             command.ExecuteNonQuery();
         }
-
-        public static void Update<T>(int id, T data)
+      
+        public static void Update(int id, object data)
         {
             var connection = new DatabaseConnection().GetInstance();
             var command = connection.CreateCommand();
@@ -124,19 +123,19 @@ namespace DatabaseWebService.DatabaseObjects
             sets = sets.Substring(0, sets.Length - 1);
             
             //Receive the Mappable classes Table attribute, to know the database table to select from
-            var tableAttribute = typeof(T).GetCustomAttributes(typeof(DatabaseTable), false);
+            var tableAttribute = data.GetType().GetCustomAttributes(typeof(DatabaseTable), false);
             command.CommandText = $"UPDATE {((DatabaseTable)tableAttribute[0]).TableName} SET {sets} WHERE Id = {id}; ";
 
             command.ExecuteNonQuery();
         }
         
-        public static void Delete<T>(int id)
+        public static void Delete(int id, Type type)
         {
             var connection = new DatabaseConnection().GetInstance();
             var command = connection.CreateCommand();
         
             //Receive the Mappable classes Table attribute, to know the database table to select from
-            var tableAttribute = typeof(T).GetCustomAttributes(typeof(DatabaseTable), false);
+            var tableAttribute = type.GetCustomAttributes(typeof(DatabaseTable), false);
             command.CommandText = $"DELETE FROM {((DatabaseTable)tableAttribute[0]).TableName} WHERE Id = {id}; ";
 
             command.ExecuteNonQuery();

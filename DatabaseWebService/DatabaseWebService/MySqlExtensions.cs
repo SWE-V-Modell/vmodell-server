@@ -1,7 +1,7 @@
 using System;
 using MySql.Data.MySqlClient;
 
-namespace DatabaseWebService.DatabaseObjects
+namespace DatabaseWebService
 {
     public static class MySqlExtensions
     {

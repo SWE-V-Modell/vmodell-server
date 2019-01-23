@@ -8,7 +8,7 @@ namespace DatabaseWebService.DatabaseObjects
     [DatabaseTable("Veranstaltungsgruppen")]
     public class Veranstaltungsgruppe
     {
-        [DatabaseColumn("Id", DefaultValue = -1)]
+        [DatabaseColumn("Id", IsPrimary = true, DefaultValue = -1)]
         public int? Id { get; set; } = -1;
         [DatabaseColumn("Gruppe")]
         public int? Gruppe { get; set; }

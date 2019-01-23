@@ -6,6 +6,7 @@ namespace DatabaseWebService
     public class DatabaseColumn : Attribute
     {
         public string ColumnName { get; }
+        public bool IsPrimary { get; set; }
         public object DefaultValue { get; set; }
         
         public DatabaseColumn(string columName)

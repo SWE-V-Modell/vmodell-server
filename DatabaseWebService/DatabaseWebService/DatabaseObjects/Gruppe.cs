@@ -9,7 +9,7 @@ namespace DatabaseWebService.DatabaseObjects
     [DatabaseTable("Gruppe")]
     public class Gruppe
     {
-        [DatabaseColumn("Id", DefaultValue = -1)]
+        [DatabaseColumn("Id", IsPrimary = true, DefaultValue = -1)]
         public int? Id { get; set; } = -1;
     }
 }

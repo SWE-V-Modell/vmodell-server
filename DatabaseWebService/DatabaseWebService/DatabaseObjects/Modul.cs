@@ -8,7 +8,7 @@ namespace DatabaseWebService.DatabaseObjects
     [DatabaseTable("Modul")]
     public class Modul
     {
-        [DatabaseColumn("Id", DefaultValue = -1)]
+        [DatabaseColumn("Id", IsPrimary = true, DefaultValue = -1)]
         public int? Id { get; set; } = -1;
         [DatabaseColumn("Dozent")]
         public int? Dozent { get; set; }

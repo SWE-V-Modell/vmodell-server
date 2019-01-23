@@ -6,10 +6,10 @@ using MySql.Data.MySqlClient;
 namespace DatabaseWebService.DatabaseObjects
 {
     [Serializable]
-    [DatabaseTable("Veranstalter")]
-    public class Veranstalter
+    [DatabaseTable("Veranstaltung")]
+    public class Veranstaltung
     {
-        [DatabaseColumn("Id", DefaultValue = -1)]
+        [DatabaseColumn("Id", IsPrimary = true, DefaultValue = -1)]
         public int? Id { get; set; } = -1;
         [DatabaseColumn("Modul")]
         public int? Modul { get; set; }
