@@ -72,18 +72,6 @@ CREATE TABLE `gruppe` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `modul`
---
-
-CREATE TABLE `modul` (
-  `Id` int(55) NOT NULL,
-  `Dozent` int(55) NOT NULL,
-  `Beschreibung` varchar(255) COLLATE latin1_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Tabellenstruktur für Tabelle `student`
 --
 
@@ -102,10 +90,10 @@ CREATE TABLE `student` (
 
 CREATE TABLE `veranstaltung` (
   `Id` int(55) NOT NULL,
-  `Modul` int(55) NOT NULL,
-  `Datum` date NOT NULL,
-  `Zeit_von` datetime NOT NULL,
-  `Zeit_bis` datetime NOT NULL,
+  `Title` int(55) NOT NULL,
+  `Dozent`int(55) NOT NULL,
+  `Date_begin` date NOT NULL,
+  `Date_end` date NOT NULL,
   `Anmerkung` varchar(255) COLLATE latin1_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
@@ -152,13 +140,6 @@ ALTER TABLE `gruppe`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indizes für die Tabelle `modul`
---
-ALTER TABLE `modul`
-  ADD PRIMARY KEY (`Id`),
-  ADD KEY `fk_modul_dozent` (`Dozent`);
-
---
 -- Indizes für die Tabelle `student`
 --
 ALTER TABLE `student`
@@ -170,7 +151,9 @@ ALTER TABLE `student`
 -- Indizes für die Tabelle `veranstalter`
 --
 ALTER TABLE `veranstaltung`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `fk_veranstaltung_dozent`(`Dozent`);
+
 
 --
 -- Indizes für die Tabelle `veranstaltungsgruppen`
@@ -249,17 +232,17 @@ ALTER TABLE `dozent`
   ADD CONSTRAINT `fk_dozent_account` FOREIGN KEY (`Account`) REFERENCES `account` (`Id`);
 
 --
--- Constraints der Tabelle `modul`
---
-ALTER TABLE `modul`
-  ADD CONSTRAINT `fk_modul_dozent` FOREIGN KEY (`Dozent`) REFERENCES `dozent` (`Id`);
-
---
 -- Constraints der Tabelle `student`
 --
 ALTER TABLE `student`
   ADD CONSTRAINT `fk_student_account` FOREIGN KEY (`Account`) REFERENCES `account` (`Id`),
   ADD CONSTRAINT `fk_student_gruppe` FOREIGN KEY (`gruppe`) REFERENCES `gruppe` (`Id`);
+
+--
+-- Constraints der Tabelle `veranstaltungsgruppen`
+--
+ALTER TABLE `veranstaltung`
+  ADD CONSTRAINT `fk_veranstaltung_dozent` FOREIGN KEY (`Dozent`) REFERENCES `dozent` (`Id`);
 
 --
 -- Constraints der Tabelle `veranstaltungsgruppen`
