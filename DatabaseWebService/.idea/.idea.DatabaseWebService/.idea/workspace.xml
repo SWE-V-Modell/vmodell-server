@@ -5,18 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DatabaseWebService/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DatabaseWebService/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DatabaseWebService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DatabaseWebService/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DatabaseWebService/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/bin/Debug/netcoreapp2.2/DatabaseWebService.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/bin/Debug/netcoreapp2.2/DatabaseWebService.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/bin/Debug/netcoreapp2.2/DatabaseWebService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/bin/Debug/netcoreapp2.2/DatabaseWebService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/bin/Debug/netcoreapp2.2/DatabaseWebService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/bin/Debug/netcoreapp2.2/DatabaseWebService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/DatabaseWebService.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/DatabaseWebService.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/DatabaseWebService.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/DatabaseWebService.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/Debug/netcoreapp2.2/DatabaseWebService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseWebService/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseWebService/obj/project.packagespec.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,31 +18,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DatabaseWebService/Controllers/MainController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="140" column="12" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
+            <state relative-caret-position="-280">
+              <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
               <folding>
-                <marker date="1548665985805" expanded="true" signature="6:278" ph="..." />
-                <marker date="1548665985805" expanded="true" signature="346:5418" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="436:5416" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="540:1859" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="661:1516" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="1142:1427" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="1551:1823" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="1989:2692" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="2058:2370" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="2406:2682" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="2833:3552" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="2902:3230" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="3266:3542" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="3666:4342" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="3723:4020" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="4056:4332" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="4411:4794" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="4701:4758" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="4841:4956" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="5032:5410" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="5159:5310" ph="{...}" />
-                <marker date="1548665985805" expanded="true" signature="5327:5400" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="6:278" ph="..." />
+                <marker date="1548666323408" expanded="true" signature="346:5272" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="436:5270" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="540:1849" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="651:1506" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="1132:1417" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="1541:1813" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="1979:2682" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="2048:2360" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="2396:2672" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="2823:3542" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="2892:3220" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="3256:3532" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="3656:4332" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="3713:4010" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="4046:4322" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="4401:4784" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="4691:4748" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="4831:4946" ph="{...}" />
+                <marker date="1548666323408" expanded="true" signature="5022:5264" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -103,6 +89,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ilikec &lt;s-agricola@web.de&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -323,12 +314,20 @@
       <workItem from="1547553181545" duration="1356000" />
       <workItem from="1548235661103" duration="2690000" />
       <workItem from="1548263113798" duration="8106000" />
-      <workItem from="1548661265237" duration="2840000" />
+      <workItem from="1548661265237" duration="3142000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed Type Conversion Problems for http queries">
+      <created>1548666262206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548666262206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48962000" />
+    <option name="totallyTimeSpent" value="49264000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,8 +349,8 @@
       <window_info id="Capture Tool" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42490843" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3992674" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42490843" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992674" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -412,6 +411,10 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed Type Conversion Problems for http queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Type Conversion Problems for http queries" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -603,31 +606,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DatabaseWebService/Controllers/MainController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="140" column="12" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
+        <state relative-caret-position="-280">
+          <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
           <folding>
-            <marker date="1548665985805" expanded="true" signature="6:278" ph="..." />
-            <marker date="1548665985805" expanded="true" signature="346:5418" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="436:5416" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="540:1859" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="661:1516" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="1142:1427" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="1551:1823" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="1989:2692" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="2058:2370" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="2406:2682" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="2833:3552" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="2902:3230" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="3266:3542" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="3666:4342" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="3723:4020" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="4056:4332" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="4411:4794" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="4701:4758" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="4841:4956" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="5032:5410" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="5159:5310" ph="{...}" />
-            <marker date="1548665985805" expanded="true" signature="5327:5400" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="6:278" ph="..." />
+            <marker date="1548666323408" expanded="true" signature="346:5272" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="436:5270" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="540:1849" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="651:1506" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="1132:1417" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="1541:1813" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="1979:2682" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="2048:2360" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="2396:2672" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="2823:3542" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="2892:3220" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="3256:3532" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="3656:4332" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="3713:4010" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="4046:4322" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="4401:4784" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="4691:4748" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="4831:4946" ph="{...}" />
+            <marker date="1548666323408" expanded="true" signature="5022:5264" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -19,13 +19,12 @@ namespace DatabaseWebService.Controllers
        [HttpGet("{typename}")]
        public ActionResult<List<object>> GetAdmin(string typename)
        {
-           var output = new List<object>();
-          
+           List<object> output;
+            
            Type type = null;
             
            try
            {
-               //type = Type.GetType($"DatabaseWebService.DatabaseObjects.{typename.ToFirstLetterUppercase()}");
                type = GetTypeCaseInsensitive($"DatabaseWebService.DatabaseObjects.{typename}");
                if (type == null) throw new Exception($"The requested datatype {typename} doesnt exist.");
                
@@ -58,7 +57,7 @@ namespace DatabaseWebService.Controllers
             
             try
             {
-                type = Type.GetType($"DatabaseWebService.DatabaseObjects.{typename}");
+                type = GetTypeCaseInsensitive($"DatabaseWebService.DatabaseObjects.{typename}");
                 if (type == null) throw new Exception("The requested datatype doesnt exist.");
                 
                 DbSelector.Insert(post.ToObject(type));
@@ -78,7 +77,7 @@ namespace DatabaseWebService.Controllers
             
             try
             {
-                type = Type.GetType($"DatabaseWebService.DatabaseObjects.{typename}");
+                type = GetTypeCaseInsensitive($"DatabaseWebService.DatabaseObjects.{typename}");
                 if (type == null) throw new Exception($"The requested datatype {typename} doesnt exist.");
                 
                 DbSelector.Update(id, post.ToObject(type));
@@ -98,7 +97,7 @@ namespace DatabaseWebService.Controllers
 
             try
             {
-                type = Type.GetType($"DatabaseWebService.DatabaseObjects.{typename}");
+                type = GetTypeCaseInsensitive($"DatabaseWebService.DatabaseObjects.{typename}");
                 if (type == null) throw new Exception($"The requested datatype {typename} doesnt exist.");
                 DbSelector.Delete(id, type);
 
