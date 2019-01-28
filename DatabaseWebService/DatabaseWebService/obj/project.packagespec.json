@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\sebas\\RiderProjects\\DatabaseWebService\\DatabaseWebService\\DatabaseWebService.csproj",
+    "projectUniqueName": "C:\\Users\\sebas\\RiderProjects\\vmodell-server\\DatabaseWebService\\DatabaseWebService\\DatabaseWebService.csproj",
     "projectName": "DatabaseWebService",
-    "projectPath": "C:\\Users\\sebas\\RiderProjects\\DatabaseWebService\\DatabaseWebService\\DatabaseWebService.csproj",
-    "outputPath": "C:\\Users\\sebas\\RiderProjects\\DatabaseWebService\\DatabaseWebService\\obj\\",
+    "projectPath": "C:\\Users\\sebas\\RiderProjects\\vmodell-server\\DatabaseWebService\\DatabaseWebService\\DatabaseWebService.csproj",
+    "outputPath": "C:\\Users\\sebas\\RiderProjects\\vmodell-server\\DatabaseWebService\\DatabaseWebService\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -53,6 +53,14 @@
       ],
       "assetTargetFallback": true,
       "warn": true
+    }
+  },
+  "runtimes": {
+    "": {
+      "#import": []
+    },
+    "win-x64": {
+      "#import": []
     }
   }
 }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\sebas\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\sebas\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_DatabaseWebService.28767163.00" t="ExcludeRecursive" />
-    <e p="C:\Users\sebas\RiderProjects\DatabaseWebService" t="IncludeFlat">
+    <e p="C:\Users\sebas\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_DatabaseWebService.-1936589530.00" t="ExcludeRecursive" />
+    <e p="C:\Users\sebas\RiderProjects\vmodell-server\DatabaseWebService" t="IncludeFlat">
       <e p="DatabaseWebService" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
