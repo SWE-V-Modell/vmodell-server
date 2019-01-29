@@ -5,7 +5,7 @@ namespace DatabaseWebService
 {
     public class DatabaseConnection
     {
-        private const string ConnectionString = "Server=127.0.0.1;Database=swe;Uid=root;";
+        private const string ConnectionString = "Server=127.0.0.1;Database=swe;Uid=root;Pwd=12345;";
         private static MySqlConnection _connection;
 
         public MySqlConnection GetInstance()
