@@ -22,6 +22,14 @@ SET time_zone = "+00:00";
 -- Datenbank: `swe`
 --
 
+drop database if exists swe;
+create database swe DEFAULT CHARACTER SET utf8 ;
+
+SET NAMES 'utf8';
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+use swe;
 -- --------------------------------------------------------
 
 --
@@ -37,7 +45,7 @@ CREATE TABLE `account` (
 --
 -- Daten für Tabelle `account`
 --
-
+SET NAMES 'utf8';
 INSERT INTO `account` (`Id`, `Email`, `Password`) VALUES
 (4, 'rügenberg@samanpouristcool.de', 'geheim'),
 (5, 'ProfSamanpour@samanpouristrichtigcool.de', '1234geheim'),
@@ -86,7 +94,7 @@ CREATE TABLE `dozent` (
 --
 -- Daten für Tabelle `dozent`
 --
-
+SET NAMES 'utf8';
 INSERT INTO `dozent` (`Id`, `Name`, `Account`) VALUES
 (1, 'Herr Rügenberg', 4),
 (2, 'Prof. Samanpour', 5),
@@ -106,7 +114,7 @@ CREATE TABLE `gruppe` (
 --
 -- Daten für Tabelle `gruppe`
 --
-
+SET NAMES 'utf8';
 INSERT INTO `gruppe` (`Id`, `Beschreibung`) VALUES
 (1, 'A'),
 (2, 'B'),
@@ -127,7 +135,7 @@ CREATE TABLE `modul` (
 --
 -- Daten für Tabelle `modul`
 --
-
+SET NAMES 'utf8';
 INSERT INTO `modul` (`Id`, `Dozent`, `Beschreibung`) VALUES
 (1, 1, 'Software Engineering'),
 (2, 2, 'IT-Management'),
@@ -149,7 +157,7 @@ CREATE TABLE `student` (
 --
 -- Daten für Tabelle `student`
 --
-
+SET NAMES 'utf8';
 INSERT INTO `student` (`Id`, `Name`, `Gruppe`, `Account`) VALUES
 (1, 'Lorenz Backhaus', 1, 9),
 (2, 'Felix Maninger', 2, 10),
@@ -177,7 +185,7 @@ CREATE TABLE `veranstaltung` (
 --
 -- Daten für Tabelle `veranstaltung`
 --
-
+SET NAMES 'utf8';
 INSERT INTO `veranstaltung` (`Id`, `Modul`, `Title`, `Datum`, `Zeit_von`, `Zeit_bis`, `Anmerkung`) VALUES
 (1, 1, 'SWE', '2019-08-13', '2019-08-13 13:30:00', '2019-08-13 16:30:00', 'Wird bestimmt richtig cool'),
 (2, 2, 'Controlling', '2019-05-10', '2019-08-13 13:30:00', '2019-08-13 16:30:00', 'Wird bestimmt richtig richtig cool'),
@@ -198,7 +206,7 @@ CREATE TABLE `veranstaltungsgruppen` (
 --
 -- Daten für Tabelle `veranstaltungsgruppen`
 --
-
+SET NAMES 'utf8';
 INSERT INTO `veranstaltungsgruppen` (`Id`, `Gruppe`, `Veranstaltung`) VALUES
 (1, 1, 1),
 (2, 2, 1),
