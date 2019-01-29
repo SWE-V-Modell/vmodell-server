@@ -82,12 +82,15 @@ namespace DatabaseWebService
             
             foreach (var property in data.GetType().GetProperties())
             {
-                if(!(property.GetCustomAttributes(typeof(DatabaseColumn), false)?[0] is DatabaseColumn databaseColumn)) continue;
+                var t = Nullable.GetUnderlyingType(property.PropertyType) ?? property.PropertyType;
+                if (!(property.GetCustomAttributes(typeof(DatabaseColumn), false)?[0] is DatabaseColumn databaseColumn)) continue;
                 if (databaseColumn.IsPrimary) continue;
                 columns += $"{databaseColumn.ColumnName},";
                 
-                if(property.PropertyType == typeof(string))
+                if(t == typeof(string))
                     values += $"\"{property.GetValue(data)}\",";
+                else if(t == typeof(DateTime)) 
+                    values += $"\"{((DateTime)property.GetValue(data)).ToString("yyyy-MM-dd HH:mm:ss")}\",";
                 else
                     values += $"{property.GetValue(data)},";
             }
@@ -111,14 +114,17 @@ namespace DatabaseWebService
         
             foreach (var property in data.GetType().GetProperties())
             {
+                var t = Nullable.GetUnderlyingType(property.PropertyType) ?? property.PropertyType;
                 var value = property.GetValue(data);
                 if(!(property.GetCustomAttributes(typeof(DatabaseColumn), false)?[0] is DatabaseColumn columnAtt)) continue;
                 if (columnAtt.DefaultValue?.Equals(value) ?? value == null) continue;
                 
                 sets += $"{columnAtt.ColumnName} = ";
                 
-                if(property.PropertyType == typeof(string))
+                if(t == typeof(string))
                     sets += $"\"{property.GetValue(data)}\",";
+                else if (t == typeof(DateTime))
+                    sets += $"\"{((DateTime)property.GetValue(data)).ToString("yyyy-MM-dd HH:mm:ss")}\",";
                 else
                     sets += $"{property.GetValue(data)},";
             }

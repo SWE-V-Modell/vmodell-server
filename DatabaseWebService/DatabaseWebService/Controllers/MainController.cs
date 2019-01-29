@@ -138,17 +138,9 @@ namespace DatabaseWebService.Controllers
         {
             var t = Nullable.GetUnderlyingType(p.PropertyType) ?? p.PropertyType;
             
+            var safeValue = Convert.ChangeType(value.ToString(), t);
+            p.SetValue(instance, safeValue);
             
-
-            if (t == typeof(DateTime))
-            {
-                p.SetValue(instance, DateTime.ParseExact(value.ToString(), "yyyy-mm-dd hh:mm:ss", CultureInfo.CurrentCulture));
-            }
-            else
-            {
-                var safeValue = Convert.ChangeType(value.ToString(), t);
-                p.SetValue(instance, safeValue);
-            }
         }
     }
 }
