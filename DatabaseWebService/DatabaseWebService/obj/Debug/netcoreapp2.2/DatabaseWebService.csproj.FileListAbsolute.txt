@@ -27,3 +27,17 @@ C:\Users\sebas\RiderProjects\vmodell-server\DatabaseWebService\DatabaseWebServic
 C:\Users\sebas\RiderProjects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.RazorTargetAssemblyInfo.cache
 C:\Users\sebas\RiderProjects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.dll
 C:\Users\sebas\RiderProjects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.pdb
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.deps.json
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.runtimeconfig.json
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.runtimeconfig.dev.json
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.dll
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\bin\Debug\netcoreapp2.2\DatabaseWebService.pdb
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.csprojResolveAssemblyReference.cache
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.csproj.CoreCompileInputs.cache
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.RazorAssemblyInfo.cache
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.RazorAssemblyInfo.cs
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.AssemblyInfoInputs.cache
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.AssemblyInfo.cs
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.RazorTargetAssemblyInfo.cache
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.dll
+C:\Users\a642375\Documents\Projects\vmodell-server\DatabaseWebService\DatabaseWebService\obj\Debug\netcoreapp2.2\DatabaseWebService.pdb
