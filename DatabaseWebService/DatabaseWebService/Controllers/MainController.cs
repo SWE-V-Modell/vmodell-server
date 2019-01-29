@@ -9,11 +9,13 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Type = System.Type;
+using System.Web.Http.Cors;
 
 namespace DatabaseWebService.Controllers
 {
     [Route("api")]
     [ApiController]
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     public class MainController : ControllerBase
     {
        [HttpGet("{typename}")]

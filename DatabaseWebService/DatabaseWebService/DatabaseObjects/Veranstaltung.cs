@@ -13,6 +13,8 @@ namespace DatabaseWebService.DatabaseObjects
         public int? Id { get; set; } = -1;
         [DatabaseColumn("Modul")]
         public int? Modul { get; set; }
+        [DatabaseColumn("Title")]
+        public string Titel { get; set; }
         [DatabaseColumn("Datum")]
         public DateTime? Datum { get; set; }
         [DatabaseColumn("Zeit_von")]

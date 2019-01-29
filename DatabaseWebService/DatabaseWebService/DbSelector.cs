@@ -10,7 +10,7 @@ namespace DatabaseWebService
         {
             //The result list to be returned
             var output = new List<object>();
-            var connection = new DatabaseConnection().GetInstance();
+            var connection = DatabaseConnection.GetInstance();
             var command = connection.CreateCommand();
             var paramCount = 0;
             
@@ -68,12 +68,14 @@ namespace DatabaseWebService
                 }
             }
 
+            DatabaseConnection.CloseInstance(connection);
+            
             return output;
         }
 
         public static void Insert(object data)
         {
-            var connection = new DatabaseConnection().GetInstance();
+            var connection = DatabaseConnection.GetInstance();
             var command = connection.CreateCommand();
             var columns = "";
             var values = "";
@@ -98,11 +100,12 @@ namespace DatabaseWebService
             command.CommandText = $"INSERT INTO {((DatabaseTable)tableAttribute[0]).TableName}({columns}) VALUES ({values}); ";
 
             command.ExecuteNonQuery();
+            DatabaseConnection.CloseInstance(connection);
         }
       
         public static void Update(int id, object data)
         {
-            var connection = new DatabaseConnection().GetInstance();
+            var connection = DatabaseConnection.GetInstance();
             var command = connection.CreateCommand();
             var sets = "";
         
@@ -127,11 +130,12 @@ namespace DatabaseWebService
             command.CommandText = $"UPDATE {((DatabaseTable)tableAttribute[0]).TableName} SET {sets} WHERE Id = {id}; ";
 
             command.ExecuteNonQuery();
+            DatabaseConnection.CloseInstance(connection);
         }
         
         public static void Delete(int id, Type type)
         {
-            var connection = new DatabaseConnection().GetInstance();
+            var connection = DatabaseConnection.GetInstance();
             var command = connection.CreateCommand();
         
             //Receive the Mappable classes Table attribute, to know the database table to select from
@@ -139,6 +143,7 @@ namespace DatabaseWebService
             command.CommandText = $"DELETE FROM {((DatabaseTable)tableAttribute[0]).TableName} WHERE Id = {id}; ";
 
             command.ExecuteNonQuery();
+            DatabaseConnection.CloseInstance(connection);
         }
     }
 }
