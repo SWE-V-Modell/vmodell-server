@@ -10,9 +10,9 @@ namespace DatabaseWebService.DatabaseObjects
     {
         [DatabaseColumn("Id", IsPrimary = true, DefaultValue = -1)]
         public int? Id { get; set; } = -1;
-        [DatabaseColumn("Gruppe")]
-        public int? Gruppe { get; set; }
-        [DatabaseColumn("Veranstaltung")]
-        public int? Veranstaltung { get; set; }
+        [DatabaseColumn("GruppeId")]
+        public int? GruppeId { get; set; }
+        [DatabaseColumn("VeranstaltungId")]
+        public int? VeranstaltungId { get; set; }
     }
 }
