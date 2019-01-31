@@ -11,7 +11,7 @@ namespace DatabaseWebService.DatabaseObjects
     {
         [DatabaseColumn("Id", IsPrimary = true, DefaultValue = -1)]
         public int? Id { get; set; } = -1;
-        [DatabaseColumn("Title")]
+        [DatabaseColumn("Titel")]
         public string Titel { get; set; }
         [DatabaseColumn("Date_Begin")]
         public DateTime? Date_Begin { get; set; }
