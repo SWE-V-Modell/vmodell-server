@@ -12,10 +12,10 @@ namespace DatabaseWebService.DatabaseObjects
         public int? Id { get; set; }
         [DatabaseColumn("Name")]
         public string Name { get; set; }
-        [DatabaseColumn("GruppeId")]
-        public int? GruppeId { get; set; }
-        [DatabaseColumn("AccountId")]
-        public int? AccountId { get; set; }
+        [DatabaseColumn("Gruppe")]
+        public int? Gruppe { get; set; }
+        [DatabaseColumn("Account")]
+        public int? Account { get; set; }
       
     }
 }

@@ -152,8 +152,8 @@ CREATE TABLE `veranstaltung` (
   `Id` int(55) NOT NULL,
   `Title` varchar(255) COLLATE latin1_general_ci NOT NULL,
   `Datum` date NOT NULL,
-  `Zeit_von` datetime NOT NULL,
-  `Zeit_bis` datetime NOT NULL,
+  `Date_Begin` datetime NOT NULL,
+  `Date_End` datetime NOT NULL,
   `Anmerkung` varchar(255) COLLATE latin1_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
@@ -161,7 +161,7 @@ CREATE TABLE `veranstaltung` (
 -- Daten für Tabelle `veranstaltung`
 --
 SET NAMES 'utf8';
-INSERT INTO `veranstaltung` (`Id`, `Title`, `Datum`, `Zeit_von`, `Zeit_bis`, `Anmerkung`) VALUES
+INSERT INTO `veranstaltung` (`Id`, `Title`, `Datum`, `Date_Begin`, `Date_End`, `Anmerkung`) VALUES
 (1,  'SWE', '2019-08-13', '2019-08-13 13:30:00', '2019-08-13 16:30:00', 'Wird bestimmt richtig cool'),
 (2,  'Controlling', '2019-05-10', '2019-08-13 13:30:00', '2019-08-13 16:30:00', 'Wird bestimmt richtig richtig cool'),
 (3,  'IT-Management', '2019-11-12', '2019-11-12 13:30:00', '2019-11-12 16:39:00', 'Wird langweilig');
