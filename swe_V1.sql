@@ -120,27 +120,6 @@ INSERT INTO `gruppe` (`Id`, `Beschreibung`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `modul`
---
-
-CREATE TABLE `modul` (
-  `Id` int(55) NOT NULL,
-  `Dozent` int(55) NOT NULL,
-  `Beschreibung` varchar(255) COLLATE latin1_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
---
--- Daten für Tabelle `modul`
---
-SET NAMES 'utf8';
-INSERT INTO `modul` (`Id`, `Dozent`, `Beschreibung`) VALUES
-(1, 1, 'Software Engineering'),
-(2, 2, 'IT-Management'),
-(3, 3, 'Human Resources & Leadership');
-
--- --------------------------------------------------------
-
---
 -- Tabellenstruktur für Tabelle `student`
 --
 
@@ -172,7 +151,6 @@ INSERT INTO `student` (`Id`, `Name`, `Gruppe`, `Account`) VALUES
 CREATE TABLE `veranstaltung` (
   `Id` int(55) NOT NULL,
   `Title` varchar(255) COLLATE latin1_general_ci NOT NULL,
-  `Modul` int(55) NOT NULL,
   `Datum` date NOT NULL,
   `Zeit_von` datetime NOT NULL,
   `Zeit_bis` datetime NOT NULL,
@@ -183,10 +161,10 @@ CREATE TABLE `veranstaltung` (
 -- Daten für Tabelle `veranstaltung`
 --
 SET NAMES 'utf8';
-INSERT INTO `veranstaltung` (`Id`, `Modul`, `Title`, `Datum`, `Zeit_von`, `Zeit_bis`, `Anmerkung`) VALUES
-(1, 1, 'SWE', '2019-08-13', '2019-08-13 13:30:00', '2019-08-13 16:30:00', 'Wird bestimmt richtig cool'),
-(2, 2, 'Controlling', '2019-05-10', '2019-08-13 13:30:00', '2019-08-13 16:30:00', 'Wird bestimmt richtig richtig cool'),
-(3, 3, 'IT-Management', '2019-11-12', '2019-11-12 13:30:00', '2019-11-12 16:39:00', 'Wird langweilig');
+INSERT INTO `veranstaltung` (`Id`, `Title`, `Datum`, `Zeit_von`, `Zeit_bis`, `Anmerkung`) VALUES
+(1,  'SWE', '2019-08-13', '2019-08-13 13:30:00', '2019-08-13 16:30:00', 'Wird bestimmt richtig cool'),
+(2,  'Controlling', '2019-05-10', '2019-08-13 13:30:00', '2019-08-13 16:30:00', 'Wird bestimmt richtig richtig cool'),
+(3,  'IT-Management', '2019-11-12', '2019-11-12 13:30:00', '2019-11-12 16:39:00', 'Wird langweilig');
 
 -- --------------------------------------------------------
 
@@ -243,13 +221,6 @@ ALTER TABLE `gruppe`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indizes für die Tabelle `modul`
---
-ALTER TABLE `modul`
-  ADD PRIMARY KEY (`Id`),
-  ADD KEY `fk_modul_dozent` (`Dozent`);
-
---
 -- Indizes für die Tabelle `student`
 --
 ALTER TABLE `student`
@@ -300,12 +271,6 @@ ALTER TABLE `gruppe`
   MODIFY `Id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT für Tabelle `modul`
---
-ALTER TABLE `modul`
-  MODIFY `Id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
 -- AUTO_INCREMENT für Tabelle `student`
 --
 ALTER TABLE `student`
@@ -338,12 +303,6 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `dozent`
   ADD CONSTRAINT `fk_dozent_account` FOREIGN KEY (`Account`) REFERENCES `account` (`Id`);
-
---
--- Constraints der Tabelle `modul`
---
-ALTER TABLE `modul`
-  ADD CONSTRAINT `fk_modul_dozent` FOREIGN KEY (`Dozent`) REFERENCES `dozent` (`Id`);
 
 --
 -- Constraints der Tabelle `student`
