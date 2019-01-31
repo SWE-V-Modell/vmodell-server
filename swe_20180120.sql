@@ -192,12 +192,6 @@ ALTER TABLE `gruppe`
   MODIFY `Id` int(55) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT für Tabelle `modul`
---
-ALTER TABLE `modul`
-  MODIFY `Id` int(55) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT für Tabelle `student`
 --
 ALTER TABLE `student`
